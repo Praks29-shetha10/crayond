@@ -286,6 +286,11 @@ nav a:active{
   }
 }
 
+.belowbg{
+  background-color: black;
+  margin-top: 30px;
+}
+
 .belowcard2 h4{
    color: black;
   font-weight: bold;
@@ -334,6 +339,140 @@ nav a:active{
   transform: translateY(-4px);
 }
 
+.journey-container{
+  background-color: #242438;
+  gap:20px;
+}
+.journey h2{
+  font-size: 30px;
+  color:white;
+  font-weight: 500px;
+  text-align: center;
+}
+.journey p{
+  font-size: 20px;
+  color:#ccc;
+  text-align: center;
+}
+.hifen{
+  width: 60px;
+  margin-left: 50%;
+  height: 40px;
+}
+.journey-cont h2{
+  color: rgb(243, 243, 139);
+  font-size: 32px;
+  margin-left: 30%;
+  font-weight: bolder;
+  line-height: 5px;
+}
+.journey-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px ;
+  font-size: 28px;
+  gap:40px;
+  justify-content: center;
+
+}
+
+.journey-cont span{
+  font-size: 14px;
+  color: #ccc;
+  letter-spacing: 1px;
+  justify-content: center;
+  padding-left: 30px;
+  
+
+}
+
+
+
+
+.profile-section{
+  max-width: 1200px;
+  margin:60px auto;
+  padding:0 20px;
+}
+.pheading{
+  margin-bottom:40px;
+  font-weight: 500px;
+  text-align: center;
+
+}
+.pheading h3{
+  font-size: 30px;
+  color: #000;
+
+}
+.pheading p{
+  font-size: 20px;
+  color: #333;
+  margin-top: 10px;
+
+}
+
+
+.profile-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.profile-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  position: relative;
+}
+
+.lines {
+  font-size: 50px;
+  color: #fcd34d;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.profile-card p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.info strong {
+  color: #111;
+}
+
+.know-our-process h2{
+font-size: 30px;
+color: black;
+text-align: center;
+
+}
+.know-our-process p{
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.changing-button{
+  font-weight: bold;
+  background-color: white;
+  color:#000;
+  border: #6c5ce7;
+}
 .accordion-button {
   font-weight: 600;
 }
