@@ -4,13 +4,17 @@ body{
   font-size:large;
   background-color: #fff;
   color: #333;
+  overflow-x: hidden;
+  
 
 }
+
 .pagewrapper{
   max-width: 1500px;     
   margin: 0 auto;         
   padding: 0 40px;  
 }
+
 .container
 {
   justify-content: space-between;
@@ -18,24 +22,35 @@ body{
   padding: 20px ;
   align-items: center;
 }
+
+/*.container {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+*/
+
 .image{
    
-  width: 80px;
+  width: 60px;
   padding-left: 10%;
 }
 
 .button{
 
-  padding: 10px 10px;
-  border: 2px solid blue;     
+  padding: 8px 8px;
+  border: 1px solid rgb(96, 28, 242);     
   background-color: white;      
-  color: blue;                  
+  color: rgb(96, 28, 242);;                  
   text-decoration: none;
-  border-radius: 6px;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 255, 0.3);
 }
 
 .button:hover{
-  background-color: blue;
+  background-color: rgb(81, 68, 201);
   color: #fff;
 }
 
@@ -43,17 +58,21 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 28px;
+  
 }
+
 
  nav a {
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color:rgb(120, 117, 117);
+
+   font-family:'Lato', sans-serif;
+  font-weight:  weight 200px;;
 }
 
 
 nav a:hover{
-    color:blue;
+    color:rgb(47, 47, 182);
 }
 nav a:active{
     color: blue;
@@ -63,64 +82,74 @@ nav a:active{
 .middle h6{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: #333;
+    color:#646060;
     margin-top: 15px;
-    font-size:18px;
-    margin-bottom: 70px;
+    font-size:20px;
+    margin-bottom: 50px;
+    font-weight: bold;
 
 }
 .middle {
   text-align: center;
   margin-top: 80px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   font-family: Arial, sans-serif;
-  font-size: 28px;
+  font-weight: bold;
+  font-size: 34px;
   line-height: 1.8em;
   color: black;
 }
 
 .usable{
-  background-color: rgb(211, 235, 227);
+  background-color: #e0e4fa;
 }
 .blaze{
-  background-color: rgb(212, 206, 245);
+  background-color: #fff3e4;
 }
 .bugfree{
-  background-color:rgb(238, 220, 198);
+  background-color:#faefef;
 }
 .secure{
-  background-color:rgb(212, 176, 244);
+  background-color:#effbf3;
 }
 .scalable{
-  background-color:rgb(244, 189, 225);
-}
-.twobuttons {
-  display: flex;
-  gap: 25px;
-  justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  background-color: #f5effb;;
 }
 
+
+
+.twobuttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+
 .viewbutton {
-  padding: 6px 14px ;
-  border: 2px solid blueviolet;
-  background-color: blueviolet;
+  padding: 0px 40px ;
+ margin-bottom: 2px;
+  border: 1px solid blueviolet;
+  background-color:blueviolet;
   color: white;
+  font-weight: bolder;
   text-decoration: none;
-  border-radius: 10px;
-  font-size: 20px;
+  border-radius: 8px;
+  font-size: 19px;
  
 }
 
 .buttonsch{
-  padding: 6px 14px ;
-  border: 2px solid blueviolet;
+  padding: 0px 18px ;
+  border: 1px solid blueviolet;
+  margin-bottom: 2px;
   background-color: #fff;
-  color: blue;
+  font-weight: 100%;
+  color: rgba(120,112,219,255);
   text-decoration: none;
-  border-radius: 10px;
-  font-size: 20px;
+  border-radius: 8px;
+  font-size: 18px;
   
 }
 
@@ -128,16 +157,36 @@ nav a:active{
   background-color: blueviolet;
   color: #fff;
 }
+
+.hero img {
+  width: 100vw;  
+  margin: 0;
+  display: block;
+  position: relative;
+  margin-top: -140px;
+  margin-left: -70px;
+}
+
+
 .text{
   margin-top: 80px;
   padding-left: 15px;
-  color: #333;
-  margin-bottom: 60px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 80px;
+  font-size: 18px;
 
 }
-.textin{
+.text-heading{
+  margin-top: 70px;
+  font-size: 40px;
+  color:black;
+  font-weight: lighter;
+}
+.textin span{
   margin-left: 25px;
   margin-bottom: 30px;
+  font-weight: 100%;
 }
 
 .brand-icon {
@@ -147,32 +196,46 @@ nav a:active{
   padding: 4px;
   
 }
+.brand.images img{
+  width: 130px;
+  height: 90px;
+}
 .brand.images {
-  margin-top: 70px;
+  margin-top: 50px;
   padding-left: 120px;   
   padding-right: 60px; 
+  
 }
 
 .brand-icon {
   max-width: 100%;
-  height: 60px;        /* smaller height */
+  height: 50px;        /* smaller height */
   object-fit: contain;
 }
+
+.box-2 img{
+ padding-right:-300px;
+}
 .full-width-img {
-  width: 90vw;         
+  width: 100vw;         
   height: 400px;          
   display:block;       
-  margin: 0;   
+  margin: 0;
+   
   height: 100%;   
    object-fit: fill;
   padding-top:50px ;     
+
 }
+
+
 .text2 h4{
   font-weight: bold;
   font-size: 30px;
   padding-top: 60px;
   text-align: center;
 }
+
 .text2 p{
   padding-top: 5px;
   font-size: 20px;
@@ -196,23 +259,32 @@ nav a:active{
   background: white;
   transition: transform 0.3s;
 }
+
+
 .card h2 {
   font-size: 1.5rem;
   margin-bottom: 5px;
+  margin-top: 10px;
 }
+
 .card p {
   font-size: 18px;
   color: #333;
 }
+
+
 .card1 {
   background-color: #e6f8f1; /* mint green */
 }
+
 .card2 {
   background-color: #fff4dc; /* soft yellow */
 }
+
 .card3 {
   background-color: #f8edff; /* light lavender */
 }
+
 .card-below h4{
   color: black;
   font-weight: bold;
@@ -245,6 +317,8 @@ nav a:active{
   transition: transform 0.3s;
   border-color: black;
 }
+
+
 .cards h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -254,6 +328,8 @@ nav a:active{
   font-size: 1.0rem;
   color: #333;
 }
+
+
 .scrolling-tags {
   width: 100%;
   overflow: hidden;
@@ -289,23 +365,23 @@ nav a:active{
 .belowbg{
   background-color: black;
   margin-top: 30px;
+  width:100%;
 }
-
 .belowcard2 h4{
-   color: black;
-  font-weight: bold;
-  font-size: 30px;
+   color: white;
+  font-weight:500px;
+  font-size: 50px;
   padding-top: 30px;
   text-align: center;
 
 }
 
 .belowcard2 p{
- color: #333;
+ color:rgb(247, 249, 250);
   font-size: 20px;
-  padding-top: 10px;
+  padding-top: 30px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500px;
 }
 
 .again-twobuttons {
@@ -322,7 +398,7 @@ nav a:active{
   border-radius: 12px;
   text-decoration: none;
   font-size: 1rem;
-  color: #000;
+    color: #000;
   background-color: #f0f0f0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: left;
@@ -339,9 +415,27 @@ nav a:active{
   transform: translateY(-4px);
 }
 
+.leftimg img{
+top: 2568px;
+left: -350px;
+position: absolute;
+
+height: 500px;
+}
+
+.rightimg img{
+position: absolute;
+right:-100px;
+top:2800px;
+height:200px;
+
+}
+
 .journey-container{
   background-color: #242438;
   gap:20px;
+  
+  
 }
 .journey h2{
   font-size: 30px;
@@ -455,6 +549,11 @@ nav a:active{
   color: #111;
 }
 
+
+
+
+
+
 .know-our-process h2{
 font-size: 30px;
 color: black;
@@ -474,28 +573,31 @@ text-align: center;
   border: #6c5ce7;
 }
 .accordion-button {
-  font-weight: 600;
+  font-weight: 700;
+  
+  
 }
 .accordion-item {
-  border: 1px solid #fff;
+  border: 1px solid #ebe3e3;
   border-radius: 10px;
-  margin-bottom: 15px;
-  transition: all 0.10s ease;
+  
+ padding-left: 10px;
+ padding-right: 40px;
+  transition: all 0.2s ease;
 }
 .accordion-button:focus {
-  box-shadow: none;
+  box-shadow:#ccc;
+  
 }
 .accordion-button:not(.collapsed) {
   background-color: #fff;
   color: #000;
+ 
 }
-
 .footer{
   background-color: #f9f9fb;
   padding: 60px 20px 30px;
-
 }
-
 .footer-area{
   max-width: 1200px;
   margin: auto;
@@ -516,12 +618,13 @@ text-align: center;
   border-radius: 8px;
   border: none;
   margin-top: 15px;
+  border: 2px solid blueviolet;
 }
 
 .cta-column button:hover{
   background-color: #f9f9fb;
   color: #6c5ce7;
-  border-color: black;
+ 
 }
 .lastimg{
   margin: 20px 0;
@@ -592,8 +695,15 @@ text-align: center;
 .ultimateguide a{
   color:#555;
   text-decoration: none;
-}    
+}
+
+
+
+
+    
 /*----index.html----*/
+
+
 
 /*fixedbid.html*/
 
@@ -626,6 +736,7 @@ text-align: center;
   color: black;
 
 }
+
 .bgnext h6{
   font-size: 20px;
   color: #333;
@@ -634,7 +745,7 @@ text-align: center;
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr); /* 🟨 4 cards per row */
   gap: 20px;
   padding: 40px;
   justify-items: center;
@@ -674,6 +785,7 @@ text-align: center;
   font-size: 30px;
   padding-top: 30px;
   text-align: center;
+
 }
 
 .gcheading h3{
@@ -684,10 +796,27 @@ text-align: center;
   font-weight: bold;
 }
 
+
+
 /*----fixedbid.html----*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*whoerare.html */
- .ourculture h4{
+
+    .ourculture h4{
       font-weight: bold;
       font-size: 45px;
       color: #000;
@@ -714,7 +843,5 @@ text-align: center;
 /*----whoweare.html----*/
 
 
-
       
     
-
