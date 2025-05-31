@@ -5,14 +5,14 @@ body{
   background-color: #fff;
   color: #333;
   overflow-x: hidden;
-  
+
 
 }
 
 .pagewrapper{
   max-width: 1500px;     
   margin: 0 auto;         
-  padding: 0 40px;  
+  padding: 10px 40px 20px 60px;  
 }
 
 .container
@@ -23,30 +23,28 @@ body{
   align-items: center;
 }
 
-/*.container {
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-}
-
-*/
-
-.image{
-   
-  width: 60px;
-  padding-left: 10%;
+.image img {
+  font-size: 80px;
+  cursor: pointer;
+  font-weight: bold;
+ margin-top: -32px;
+  margin-left:120%;
+  
+ 
 }
 
 .button{
-
-  padding: 8px 8px;
+  padding: 8.5px 8.5px;
   border: 1px solid rgb(96, 28, 242);     
   background-color: white;      
   color: rgb(96, 28, 242);;                  
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border-radius: 5px;
   box-shadow: 0px 1px 1px rgba(0, 0, 255, 0.3);
+  margin-top: -30px;
+  margin-right: 50px;
 }
 
 .button:hover{
@@ -58,45 +56,52 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 28px;
-  
+  margin-left: 60px;
+  margin-top: -5px;
 }
-
 
  nav a {
   text-decoration: none;
-  color:rgb(120, 117, 117);
-
-   font-family:'Lato', sans-serif;
-  font-weight:  weight 200px;;
+  color:#43434b;
+   font-family:'fontLatoRegular';
+  font-weight:600px;
+  background-color: transparent;
+  font-size: 17px;
+  line-height: 25px;
+  border-radius: 4px;
+  padding: 5px;
+ 
 }
-
 
 nav a:hover{
     color:rgb(47, 47, 182);
 }
+
 nav a:active{
     color: blue;
 }
 
-
 .middle h6{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"'Lato', sans-serif";
     text-align: center;
     color:#646060;
     margin-top: 15px;
-    font-size:20px;
+    font-size:1.2rem;
     margin-bottom: 50px;
-    font-weight: bold;
-
+    font-weight: bolder;
+    letter-spacing: 0.5px;
 }
+
 .middle {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 95px;
   margin-bottom: 50px;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 34px;
+  margin-left: 110px;
+  font-family:'Inter', 'Open Sans', 'Roboto', sans-serif ;
+  font-weight: 700;
+  font-size: 2.1rem;
   line-height: 1.8em;
+ letter-spacing: 0px;
   color: black;
 }
 
@@ -116,8 +121,6 @@ nav a:active{
   background-color: #f5effb;;
 }
 
-
-
 .twobuttons {
   display: flex;
   gap: 30px;
@@ -126,85 +129,101 @@ nav a:active{
   margin-bottom: 8px;
 }
 
-
-.viewbutton {
-  padding: 0px 40px ;
- margin-bottom: 2px;
-  border: 1px solid blueviolet;
-  background-color:blueviolet;
-  color: white;
-  font-weight: bolder;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 19px;
- 
+.twobuttons .viewbutton{
+  width: 200px;
+  height:60px;
+  border: 1px solid #665cd7;
+  background-color:#665cd7;
+ transition: 0.6s;
+ color:white;
+ text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 18px; 
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+    font-weight: 700;
 }
 
 .buttonsch{
   padding: 0px 18px ;
   border: 1px solid blueviolet;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
   background-color: #fff;
   font-weight: 100%;
-  color: rgba(120,112,219,255);
+  color: #665cd7;
   text-decoration: none;
   border-radius: 8px;
-  font-size: 18px;
-  
+  font-size: 18px; 
+   font-family:"Raleway", sans-serif;
 }
 
 .buttonsch:hover{
   background-color: blueviolet;
   color: #fff;
 }
-
-.hero img {
-  width: 100vw;  
-  margin: 0;
-  display: block;
-  position: relative;
-  margin-top: -140px;
-  margin-left: -70px;
+  
+ .hero {
+  background-image: url("heroimd.svg");   
+  background-position: bottom ;   
+  background-repeat: no-repeat;           
+  background-size:contain;               
+  height: 100vh;  
+  width: 115%;
+  margin-top:-40%;            
 }
-
-
 .text{
-  margin-top: 80px;
-  padding-left: 15px;
-  color: black;
-  font-weight: bold;
-  margin-bottom: 80px;
-  font-size: 18px;
-
+  margin-top: 90px;
+  padding-left: 20px;
+  font-weight: 650;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 60px;
+  font-size: 1.2rem;
+  font-family:'fontLatoRegular';
+  max-width: 100%;
+}
+.text img{
+  width: 120px;
+  margin-left:-10px;
+  margin-right: 20px;
+  
 }
 .text-heading{
-  margin-top: 70px;
+   font-family:'fontLatoBold';
+   font-weight: bold;
+    line-height: 2.75rem;
+    text-align: center;
+   margin-bottom: -20px;
+    font-weight: 2.2rem;
+    margin-top: 60px;
   font-size: 40px;
-  color:black;
-  font-weight: lighter;
 }
+
 .textin span{
-  margin-left: 25px;
-  margin-bottom: 30px;
-  font-weight: 100%;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: #43434b;
+  font-size: 1.1rem;
 }
 
 .brand-icon {
   width: 100px;      
   height: 100px;     
   object-fit: contain; 
-  padding: 4px;
-  
+  padding: 4px;  
 }
+
 .brand.images img{
   width: 130px;
   height: 90px;
 }
+
 .brand.images {
   margin-top: 50px;
-  padding-left: 120px;   
-  padding-right: 60px; 
-  
+  margin-left: 280px;   
+ 
+  padding-right: 80px;   
 }
 
 .brand-icon {
@@ -213,34 +232,43 @@ nav a:active{
   object-fit: contain;
 }
 
-.box-2 img{
+/*.box-2 img{
  padding-right:-300px;
-}
+}*/
+
 .full-width-img {
-  width: 100vw;         
+  width: 110vw;         
   height: 400px;          
   display:block;       
-  margin: 0;
-   
+  margin: 0;   
   height: 100%;   
-   object-fit: fill;
-  padding-top:50px ;     
-
+   object-fit: cover;
+  padding-top:50px ;    
+  margin-left: -75px; 
 }
 
-
-.text2 h4{
-  font-weight: bold;
-  font-size: 30px;
+.text2 h4{  
   padding-top: 60px;
   text-align: center;
+  color: #000;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2.75rem; 
+   text-align: center;
+  margin-bottom: 1rem;
+  margin-left:-35px;
 }
 
 .text2 p{
-  padding-top: 5px;
-  font-size: 20px;
-  color: #333;
+  padding-top: 7px;
+  font-size: 22px;
+  color:#43434b;
   text-align: center;
+  font-weight: 510;
+  margin-left: 50px;
+  margin-right: 20px;
+  letter-spacing: 0.01rem;
 }
 
 .card-container {
@@ -249,75 +277,88 @@ nav a:active{
   gap: 20px;
   padding: 20px;
   flex-wrap: wrap;
+  margin-left: 50px;
 }
 
 .card {
   width: 350px;
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
   background: white;
   transition: transform 0.3s;
 }
-
-
+.card img{
+  margin-top: -10px;
+}
 .card h2 {
   font-size: 1.5rem;
-  margin-bottom: 5px;
   margin-top: 10px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 0.875rem;
+  font-family: "fontLatoRegular";
 }
 
 .card p {
-  font-size: 18px;
+  font-size: 19px;
   color: #333;
 }
-
+.card b{
+  color: #000;
+}
 
 .card1 {
   background-color: #e6f8f1; /* mint green */
+  border-color: #e6f8f1 ;
 }
 
 .card2 {
   background-color: #fff4dc; /* soft yellow */
+  border-color: #fff4dc ;
 }
 
 .card3 {
   background-color: #f8edff; /* light lavender */
+  border-color: #f8edff ;
 }
 
 .card-below h4{
+  margin-top: 10px;
   color: black;
   font-weight: bold;
-  font-size: 30px;
-  padding-top: 30px;
+  font-size: 35px;
+  padding-top: 90px;
   text-align: center;
 }
 
 .card-below h5{
   color: #333;
   font-size: 20px;
-  padding-top: 10px;
-  text-align: center;
- 
+  padding-top: 30px;
+  text-align: center; 
 }
+
 .card-container2{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 20px;
-  padding: 20px;
+  padding: 40px;
   flex-wrap: wrap;
+  margin-left: 40px;
+  /*background-color: #f7f8fc;*/
 }
 
 .cards {
-  width: 390px;
-  padding: 50px;
-  border-radius: 16px;
-  box-shadow: 0 4px 8px rgba(22, 21, 21, 0.1);
+  width: 350px;
+  padding: 40px;
+  border-radius: 10px;
+  word-wrap: break-word;
+  /*box-shadow: 0 4px 8px rgba(22, 21, 21, 0.1);*/
   background: white;
   transition: transform 0.3s;
-  border-color: black;
+  border: 1px solid #e5e7eb;  
 }
-
 
 .cards h2 {
   font-size: 1.5rem;
@@ -325,10 +366,9 @@ nav a:active{
 }
 
 .cards p {
-  font-size: 1.0rem;
+  font-size: 1.2rem;
   color: #333;
 }
-
 
 .scrolling-tags {
   width: 100%;
@@ -367,13 +407,13 @@ nav a:active{
   margin-top: 30px;
   width:100%;
 }
+
 .belowcard2 h4{
    color: white;
   font-weight:500px;
   font-size: 50px;
   padding-top: 30px;
   text-align: center;
-
 }
 
 .belowcard2 p{
@@ -394,11 +434,11 @@ nav a:active{
 
 .again-twobuttons a {
   display: inline-block;
-  padding: 20px;
+  padding: 10x  5px 5px 1px;
   border-radius: 12px;
   text-decoration: none;
   font-size: 1rem;
-    color: #000;
+  color: #000;
   background-color: #f0f0f0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: left;
@@ -406,9 +446,15 @@ nav a:active{
   flex: 1 1 auto; /* allows auto sizing with flexibility */
   transition: transform 0.2s;
 }
+
+
 .again-twobuttons .viewbutton{
   background-color: blueviolet;
   color:#fff;
+  padding:60px;
+}
+.again-twobuttons .viewbutton b{
+  margin-top: 0;
 }
 
 .again-twobuttons a:hover {
@@ -419,7 +465,6 @@ nav a:active{
 top: 2568px;
 left: -350px;
 position: absolute;
-
 height: 500px;
 }
 
@@ -428,31 +473,32 @@ position: absolute;
 right:-100px;
 top:2800px;
 height:200px;
-
 }
 
 .journey-container{
   background-color: #242438;
   gap:20px;
-  
-  
 }
+
 .journey h2{
   font-size: 30px;
   color:white;
   font-weight: 500px;
   text-align: center;
 }
+
 .journey p{
   font-size: 20px;
   color:#ccc;
   text-align: center;
 }
+
 .hifen{
   width: 60px;
   margin-left: 50%;
   height: 40px;
 }
+
 .journey-cont h2{
   color: rgb(243, 243, 139);
   font-size: 32px;
@@ -460,6 +506,7 @@ height:200px;
   font-weight: bolder;
   line-height: 5px;
 }
+
 .journey-content {
   display: flex;
   flex-wrap: wrap;
@@ -467,7 +514,6 @@ height:200px;
   font-size: 28px;
   gap:40px;
   justify-content: center;
-
 }
 
 .journey-cont span{
@@ -476,36 +522,30 @@ height:200px;
   letter-spacing: 1px;
   justify-content: center;
   padding-left: 30px;
-  
-
 }
-
-
-
 
 .profile-section{
   max-width: 1200px;
   margin:60px auto;
   padding:0 20px;
 }
+
 .pheading{
   margin-bottom:40px;
   font-weight: 500px;
   text-align: center;
-
 }
+
 .pheading h3{
   font-size: 30px;
   color: #000;
-
 }
+
 .pheading p{
   font-size: 20px;
   color: #333;
   margin-top: 10px;
-
 }
-
 
 .profile-cards {
   display: grid;
@@ -528,11 +568,13 @@ height:200px;
   line-height: 1;
   margin-bottom: 16px;
 }
+
 .profile-card p {
   font-size: 16px;
   color: #333;
   margin-bottom: 20px;
 }
+
 .info {
   display: flex;
   align-items: center;
@@ -549,17 +591,12 @@ height:200px;
   color: #111;
 }
 
-
-
-
-
-
 .know-our-process h2{
 font-size: 30px;
 color: black;
 text-align: center;
-
 }
+
 .know-our-process p{
   font-size: 20px;
   color: #333;
@@ -572,32 +609,33 @@ text-align: center;
   color:#000;
   border: #6c5ce7;
 }
+
 .accordion-button {
-  font-weight: 700;
-  
-  
+  font-weight: 700;  
 }
+
 .accordion-item {
   border: 1px solid #ebe3e3;
-  border-radius: 10px;
-  
+  border-radius: 10px;  
  padding-left: 10px;
  padding-right: 40px;
   transition: all 0.2s ease;
 }
+
 .accordion-button:focus {
-  box-shadow:#ccc;
-  
+  box-shadow:#ccc;  
 }
+
 .accordion-button:not(.collapsed) {
   background-color: #fff;
-  color: #000;
- 
+  color: #000; 
 }
+
 .footer{
   background-color: #f9f9fb;
   padding: 60px 20px 30px;
 }
+
 .footer-area{
   max-width: 1200px;
   margin: auto;
@@ -611,6 +649,7 @@ text-align: center;
   flex:1 1 250px;
   font-weight: 600px;
 }
+
 .cta-column button{
   background-color: #6c5ce7;
   color: #fff;
@@ -623,9 +662,9 @@ text-align: center;
 
 .cta-column button:hover{
   background-color: #f9f9fb;
-  color: #6c5ce7;
- 
+  color: #6c5ce7; 
 }
+
 .lastimg{
   margin: 20px 0;
   height: 60px;
@@ -635,6 +674,7 @@ text-align: center;
   font-size: 0.9rem;
   color:#555;
 }
+
 .mediaicons{
   margin-top: 15px;
   display: flex;
@@ -649,32 +689,37 @@ text-align: center;
 
 .company{
   flex: 1 1 150px;
-
 }
+
 .company h4{
   font-weight: 600px;
 }
+
 .company ul{
   list-style: none;
   padding: 0;
   line-height: 2;
 }
+
 .company a{
   color: #555;
   text-decoration: none;
 }
+
 .resources{
   flex: 1 1 150px;
-
 }
+
 .resources h4{
   font-weight: 600px;
 }
+
 .resources ul{
   list-style: none;
   padding: 0;
   line-height: 2;
 }
+
 .resources a{
   color: #555;
   text-decoration: none;
@@ -682,33 +727,26 @@ text-align: center;
 
 .ultimateguide{
   flex: 1 1 150px;
-
 }
+
 .ultimateguide h4{
   font-weight: 600px;
 }
+
 .ultimateguide ul{
   list-style: none;
   padding: 0;
   line-height: 2;
 }
+
 .ultimateguide a{
   color:#555;
   text-decoration: none;
-}
-
-
-
-
-    
+}    
 /*----index.html----*/
 
-
-
 /*fixedbid.html*/
-
 .box-1{
-  
   text-align: center;
   margin: 90px; 
   background-image: url(fixedbid_bg.avif);  
@@ -717,14 +755,14 @@ text-align: center;
   background-repeat: no-repeat;
   padding: 60px 20px;
    color: white;
- 
 }
+
 .box-1 h5{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   color: #fff;
-
 }
+
 .box-1 h6{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -734,14 +772,12 @@ text-align: center;
 .bgnext h5{
   font-size: 30px; 
   color: black;
-
 }
 
 .bgnext h6{
   font-size: 20px;
   color: #333;
 }
-
 
 .grid-container {
   display: grid;
@@ -769,15 +805,16 @@ text-align: center;
 .grid-card:hover {
   transform: translateY(-5px);
 }
+
 .grid-card b{
   font-weight: bold;
   font-size: 20px ;
 }
+
 .grid-card p{
   text-wrap:wrap ;
   font-size: 15px;
 }
-
 
 .gcheading h4{
    color: black;
@@ -785,7 +822,6 @@ text-align: center;
   font-size: 30px;
   padding-top: 30px;
   text-align: center;
-
 }
 
 .gcheading h3{
@@ -795,27 +831,9 @@ text-align: center;
   text-align: center;
   font-weight: bold;
 }
-
-
-
 /*----fixedbid.html----*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*whoerare.html */
-
     .ourculture h4{
       font-weight: bold;
       font-size: 45px;
@@ -838,10 +856,5 @@ text-align: center;
       margin: 0px auto; /* Top & bottom: 20px, Left & Right: auto */
       max-width: 60%;
       height: auto;
-}
-      
+} 
 /*----whoweare.html----*/
-
-
-      
-    
