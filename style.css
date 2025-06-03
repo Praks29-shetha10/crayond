@@ -1,53 +1,48 @@
 /*index.html*/
-body{
-  font-family: Arial,sans-serif;
-  font-size:large;
+body {
+  font-family: Arial, sans-serif;
+  font-size: large;
   background-color: #fff;
   color: #333;
   overflow-x: hidden;
-
-
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100vh;
 }
 
-.pagewrapper{
-  max-width: 1500px;     
-  margin: 0 auto;         
-  padding: 10px 40px 20px 60px;  
+.pagewrapper {
+  max-width: 1500px;
+  margin: 0 auto; /* Ensures the pagewrapper is centered */
+  padding: 10px 40px 20px 40px;
 }
 
-.container
-{
+.container {
   justify-content: space-between;
   display: flex;
-  padding: 20px ;
+  padding: 20px 0px 20px 20px;
   align-items: center;
 }
 
 .image img {
-  font-size: 80px;
   cursor: pointer;
-  font-weight: bold;
- margin-top: -32px;
-  margin-left:120%;
-  
- 
+  margin-left: 20px;
 }
 
-.button{
-  padding: 8.5px 8.5px;
-  border: 1px solid rgb(96, 28, 242);     
-  background-color: white;      
-  color: rgb(96, 28, 242);;                  
+.button {
+  padding: 8.5px 15px;
+  border: 1px solid rgb(96, 28, 242);
+  background-color: white;
+  color: rgb(96, 28, 242);
   text-decoration: none;
   font-size: 17px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border-radius: 5px;
   box-shadow: 0px 1px 1px rgba(0, 0, 255, 0.3);
-  margin-top: -30px;
-  margin-right: 50px;
+  margin-right: 0;
 }
 
-.button:hover{
+.button:hover {
   background-color: rgb(81, 68, 201);
   color: #fff;
 }
@@ -55,70 +50,70 @@ body{
 nav ul {
   list-style: none;
   display: flex;
-  gap: 28px;
-  margin-left: 60px;
-  margin-top: -5px;
+  gap: 40px;
+  padding-right: 0;
+  margin: 0;
 }
 
- nav a {
+nav a {
   text-decoration: none;
-  color:#43434b;
-   font-family:'fontLatoRegular';
-  font-weight:600px;
-  background-color: transparent;
-  font-size: 17px;
+  color: #43434b;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
   padding: 5px;
- 
 }
 
-nav a:hover{
-    color:rgb(47, 47, 182);
+nav a:hover {
+  color: rgb(47, 47, 182);
 }
 
-nav a:active{
-    color: blue;
+nav a:active {
+  color: blue;
 }
 
-.middle h6{
-    font-family:"'Lato', sans-serif";
-    text-align: center;
-    color:#646060;
-    margin-top: 15px;
-    font-size:1.2rem;
-    margin-bottom: 50px;
-    font-weight: bolder;
-    letter-spacing: 0.5px;
+.middle h6 {
+  font-family: "'Lato', sans-serif";
+  text-align: center;
+  color: #646060;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
 }
 
 .middle {
   text-align: center;
-  margin-top: 95px;
-  margin-bottom: 50px;
-  margin-left: 110px;
-  font-family:'Inter', 'Open Sans', 'Roboto', sans-serif ;
-  font-weight: 700;
+  margin: 95px auto 50px auto;
+  font-family: 'Inter', 'Open Sans', 'Roboto', sans-serif;
   font-size: 2.1rem;
   line-height: 1.8em;
- letter-spacing: 0px;
+  letter-spacing: 0px;
   color: black;
+  max-width: 100%;
 }
 
-.usable{
+.usable {
   background-color: #e0e4fa;
 }
-.blaze{
+
+.blaze {
   background-color: #fff3e4;
 }
-.bugfree{
-  background-color:#faefef;
+
+.bugfree {
+  background-color: #faefef;
 }
-.secure{
-  background-color:#effbf3;
+
+.secure {
+  background-color: #effbf3;
 }
-.scalable{
-  background-color: #f5effb;;
+
+.scalable {
+  background-color: #f5effb;
 }
 
 .twobuttons {
@@ -129,77 +124,84 @@ nav a:active{
   margin-bottom: 8px;
 }
 
-.twobuttons .viewbutton{
+.twobuttons .viewbutton {
   width: 200px;
-  height:60px;
+  height: 60px;
   border: 1px solid #665cd7;
-  background-color:#665cd7;
- transition: 0.6s;
- color:white;
- text-decoration: none;
+  background-color: #665cd7;
+  transition: 0.6s;
+  color: white;
+  text-decoration: none;
   border-radius: 0.5rem;
-  font-size: 18px; 
+  font-size: 18px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-    font-weight: 700;
+  font-weight: 700;
+  line-height: 60px;
 }
 
-.buttonsch{
-  padding: 0px 18px ;
-  border: 1px solid blueviolet;
-  margin-bottom: 0px;
+.buttonsch {
+  padding: 0px 18px;
+  border: 1px solid #665cd7;
   background-color: #fff;
-  font-weight: 100%;
   color: #665cd7;
   text-decoration: none;
   border-radius: 8px;
-  font-size: 18px; 
-   font-family:"Raleway", sans-serif;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  line-height: 60px;
+  height: 60px;
 }
 
-.buttonsch:hover{
+.buttonsch:hover {
   background-color: blueviolet;
   color: #fff;
 }
-  
- .hero {
-  background-image: url("heroimd.svg");   
-  background-position: bottom ;   
-  background-repeat: no-repeat;           
-  background-size:contain;               
-  height: 100vh;  
-  width: 115%;
-  margin-top:-40%;            
+
+.hero {
+  background-image: url("heroimd.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  left: 0;
+  top: 400px;
+  z-index: -1;
 }
-.text{
-  margin-top: 90px;
+
+.text {
+  margin-top: 250px;
   padding-left: 20px;
   font-weight: 650;
   line-height: 1.5;
   text-align: left;
   margin-bottom: 60px;
   font-size: 1.2rem;
-  font-family:'fontLatoRegular';
+  font-family: 'fontLatoRegular';
   max-width: 100%;
 }
-.text img{
+
+.text img {
   width: 120px;
-  margin-left:-10px;
+  margin-left: -10px;
   margin-right: 20px;
-  
 }
-.text-heading{
-   font-family:'fontLatoBold';
-   font-weight: bold;
-    line-height: 2.75rem;
-    text-align: center;
-   margin-bottom: -20px;
-    font-weight: 2.2rem;
-    margin-top: 60px;
+
+.text-heading {
+  font-family: 'fontLatoBold';
+  font-weight: bold;
+  line-height: 2.75rem;
+  text-align: center;
+  margin-bottom: -20px;
+  font-weight: 2.2rem;
+  margin-top: 60px;
   font-size: 40px;
 }
 
-.textin span{
+.textin span {
   margin-left: 0px;
   margin-bottom: 0px;
   font-weight: bold;
@@ -208,62 +210,57 @@ nav a:active{
 }
 
 .brand-icon {
-  width: 100px;      
-  height: 100px;     
-  object-fit: contain; 
-  padding: 4px;  
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 4px;
 }
 
-.brand.images img{
+.brand.images img {
   width: 130px;
   height: 90px;
 }
 
 .brand.images {
   margin-top: 50px;
-  margin-left: 280px;   
- 
-  padding-right: 80px;   
+  margin-left: 170px;
+  padding-right: 100px;
 }
 
 .brand-icon {
   max-width: 100%;
-  height: 50px;        /* smaller height */
+  height: 50px;
   object-fit: contain;
 }
 
-/*.box-2 img{
- padding-right:-300px;
-}*/
-
 .full-width-img {
-  width: 110vw;         
-  height: 400px;          
-  display:block;       
-  margin: 0;   
-  height: 100%;   
-   object-fit: cover;
-  padding-top:50px ;    
-  margin-left: -75px; 
+  width: 110vw;
+  height: 400px;
+  display: block;
+  margin: 0;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 50px;
+  margin-left: -75px;
 }
 
-.text2 h4{  
+.text2 h4 {
   padding-top: 60px;
   text-align: center;
   color: #000;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 2.2rem;
   font-weight: 600;
-  line-height: 2.75rem; 
-   text-align: center;
+  line-height: 2.75rem;
+  text-align: center;
   margin-bottom: 1rem;
-  margin-left:-35px;
+  margin-left: -35px;
 }
 
-.text2 p{
+.text2 p {
   padding-top: 7px;
   font-size: 22px;
-  color:#43434b;
+  color: #43434b;
   text-align: center;
   font-weight: 510;
   margin-left: 50px;
@@ -284,13 +281,14 @@ nav a:active{
   width: 350px;
   padding: 30px;
   border-radius: 8px;
-  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
   background: white;
   transition: transform 0.3s;
 }
-.card img{
+
+.card img {
   margin-top: -10px;
 }
+
 .card h2 {
   font-size: 1.5rem;
   margin-top: 10px;
@@ -304,26 +302,27 @@ nav a:active{
   font-size: 19px;
   color: #333;
 }
-.card b{
+
+.card b {
   color: #000;
 }
 
 .card1 {
-  background-color: #e6f8f1; /* mint green */
-  border-color: #e6f8f1 ;
+  background-color: #e6f8f1;
+  border-color: #e6f8f1;
 }
 
 .card2 {
-  background-color: #fff4dc; /* soft yellow */
-  border-color: #fff4dc ;
+  background-color: #fff4dc;
+  border-color: #fff4dc;
 }
 
 .card3 {
-  background-color: #f8edff; /* light lavender */
-  border-color: #f8edff ;
+  background-color: #f8edff;
+  border-color: #f8edff;
 }
 
-.card-below h4{
+.card-below h4 {
   margin-top: 10px;
   color: black;
   font-weight: bold;
@@ -332,21 +331,20 @@ nav a:active{
   text-align: center;
 }
 
-.card-below h5{
+.card-below h5 {
   color: #333;
   font-size: 20px;
   padding-top: 30px;
-  text-align: center; 
+  text-align: center;
 }
 
-.card-container2{
+.card-container2 {
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
   padding: 40px;
   flex-wrap: wrap;
   margin-left: 40px;
-  /*background-color: #f7f8fc;*/
 }
 
 .cards {
@@ -354,10 +352,9 @@ nav a:active{
   padding: 40px;
   border-radius: 10px;
   word-wrap: break-word;
-  /*box-shadow: 0 4px 8px rgba(22, 21, 21, 0.1);*/
   background: white;
   transition: transform 0.3s;
-  border: 1px solid #e5e7eb;  
+  border: 1px solid #e5e7eb;
 }
 
 .cards h2 {
@@ -402,77 +399,273 @@ nav a:active{
   }
 }
 
-.belowbg{
-  background-color: black;
+.belowbg {
+  background-color: #000000;
   margin-top: 30px;
-  width:100%;
+  width: 100%;
+  display: flex; /* Added to use flexbox for centering */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  /* Removed the margin-left that might have caused the shift */
 }
 
-.belowcard2 h4{
-   color: white;
-  font-weight:500px;
+.belowcard2 {
+  position: relative; /* Added to position the image relative to this container */
+  width: 80%; /* Constrain the width to prevent overflow */
+  max-width: 1200px; /* Match the pagewrapper max-width for consistency */
+  margin: 0 auto; /* Center the card */
+  text-align: center; /* Center the text content */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.belowcard2 h4 {
+  color: white;
+  font-weight: 500px;
   font-size: 50px;
   padding-top: 30px;
   text-align: center;
 }
 
-.belowcard2 p{
- color:rgb(247, 249, 250);
+.belowcard2 p {
+  color: rgb(247, 249, 250);
   font-size: 20px;
   padding-top: 30px;
   text-align: center;
   font-weight: 500px;
 }
 
+/* Added styling for valueimgl to position the image */
+.valueimgl img {
+  position: absolute;
+  top: -50px; /* Adjust to position the image */
+  left: -50px; /* Adjust to position the image */
+  width: 30%; /* Matches your inline width */
+}
+
 .again-twobuttons {
   display: flex;
-  gap: 20px; /* spacing between the two buttons */
-  flex-wrap: wrap; /* allows them to wrap if needed on small screens */
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .again-twobuttons a {
-  display: inline-block;
-  padding: 10x  5px 5px 1px;
-  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 10px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #000;
   background-color: #f0f0f0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
-  max-width: 320px;
-  flex: 1 1 auto; /* allows auto sizing with flexibility */
+  width: 220px;
+  height: 120px;
   transition: transform 0.2s;
 }
 
-
-.again-twobuttons .viewbutton{
+.again-twobuttons .vbutton {
   background-color: blueviolet;
-  color:#fff;
-  padding:60px;
-}
-.again-twobuttons .viewbutton b{
-  margin-top: 0;
+  color: #000;
 }
 
-.again-twobuttons a:hover {
-  transform: translateY(-4px);
+.again-twobuttons .buttonsch {
+  background-color: white;
+  color: #000;
 }
 
-.leftimg img{
-top: 2568px;
-left: -350px;
-position: absolute;
-height: 500px;
+.vbutton .btn-heading {
+  font-size: 1rem;
+  color: white;
+  margin-top: 2px;
 }
 
-.rightimg img{
-position: absolute;
-right:-100px;
-top:2800px;
-height:200px;
+.vbutton .btn-text {
+  font-size: 1rem;
+  color: white;
+}
+
+.buttonsch .btn-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: -15px;
+  margin-bottom: 1px;
+  color: black;
+  padding-top: 0 2px;
+}
+
+.buttonsch .btn-text {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: black;
+  margin-top: -16px;
+}
+
+.table-section {
+  font-family: 'Inter', sans-serif;
+  background-color: #e6f8f6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.table-section h2 {
+  font-size: 37px;
+  margin-top: 40px;
+  font-weight: 800;
+  color: black;
+}
+
+p.subtitle {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(195, 192, 192, 0.05);
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 2rem;
+  border-bottom: 1px solid #d7d2d2;
+  border-right: 1px solid #d7d2d2;
+  text-align: center;
+}
+
+.comparison-table td:first-child {
+  text-align: left;
+  color: #404044;
+  font-size: 15.4px;
+}
+
+.comparison-table th {
+  background-color: #f4f9f9;
+  font-weight: 400;
+  color: #43434b;
+  font-size: 18px;
+}
+
+.highlight {
+  background-color: #ffffff;
+  color: white;
+}
+
+.highlight-col {
+  background-color: #e6f4e6;
+ max-width: 600px; /* Optional: limit width */
+}
+
+ .footer-cta {
+      background-color: #1c1c2d;
+      color: white;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-cta p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .cta-btn {
+      background-color:white;
+      color:#7851f5;
+      padding: 0.75rem 1.5rem;
+      align-items: center;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      
+    }
+  .footer-cta {
+      background-color: #1d1b2f;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 0;
+      display: flex;
+      gap:1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .cta-btn {
+      background-color: white;
+      color:#5f30db;
+      text-decoration: none;
+      padding: 12px 24px;
+      display: inline-flex;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-top: 5px;
+      margin-bottom: 0.5px;
+      transition: background-color 0.3s ease;
+      
+    }
+    .cta-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 600px; /* Optional: limit width */
+}
+
+.cta-btn:hover {
+  background-color: #5f30db;
+  color: white;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+  width: 50%;
+}
+
+.comparison-table th:not(:first-child),
+.comparison-table td:not(:first-child) {
+  width: 20.66%;
+}
+
+.leftimg img {
+  top: 2568px;
+  left: -350px;
+  position: absolute;
+  height: 500px;
+}
+
+.rightimg img {
+  position: absolute;
+  right: 600px;
+}
+
+.cta-column button:hover {
+  background-color: #f9f9fb;
+  color: #6c5ce7;
 }
 
 .journey-container{
